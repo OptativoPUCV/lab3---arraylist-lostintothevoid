@@ -208,3 +208,13 @@ Fri 31 Mar 2023 11:59:44 AM UTC:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 47719b4
+Fri 31 Mar 2023 12:00:05 PM UTC: 
+ arraylist.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+arraylist.c: In function ‘append’:
+arraylist.c:23:15: error: expected expression before ‘<’ token
+   23 |   if(l->size >< l->capacity){
+      |               ^
+Compilation failed
+56a03e9
