@@ -218,3 +218,9 @@ arraylist.c:23:15: error: expected expression before ‘<’ token
       |               ^
 Compilation failed
 56a03e9
+Fri 31 Mar 2023 12:00:14 PM UTC: 
+ arraylist.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  1|5
+total_score: 10/70
+f8c4d36
