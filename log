@@ -230,3 +230,16 @@ Fri 31 Mar 2023 12:02:00 PM UTC:
  tests:  2|5
 total_score: 15/70
 65a3cfa
+Fri 31 Mar 2023 12:02:41 PM UTC: 
+ arraylist.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+arraylist.c: In function ‘append’:
+arraylist.c:25:30: error: expected ‘;’ before ‘l’
+   25 |     l->capacity=l->capacity*2
+      |                              ^
+      |                              ;
+   26 |     l->data=realloc(data, l->capacity);
+      |     ~                         
+Compilation failed
+4ded29f
