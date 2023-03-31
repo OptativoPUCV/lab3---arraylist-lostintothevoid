@@ -328,3 +328,15 @@ arraylist.c:43:10: error: unused variable ‘aux’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 809a7cd
+Fri 31 Mar 2023 12:30:45 PM UTC: 
+ arraylist.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+arraylist.c: In function ‘push’:
+arraylist.c:43:10: error: variable or field ‘aux’ declared void
+   43 |     void aux;
+      |          ^~~
+arraylist.c:43:10: error: unused variable ‘aux’ [-Werror=unused-variable]
+cc1: all warnings being treated as errors
+Compilation failed
+1384667
