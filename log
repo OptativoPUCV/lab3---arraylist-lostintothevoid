@@ -414,3 +414,14 @@ arraylist.c:71:1: error: control reaches end of non-void function [-Werror=retur
 cc1: all warnings being treated as errors
 Compilation failed
 43fe5af
+Fri 31 Mar 2023 02:42:11 PM UTC: 
+ arraylist.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+arraylist.c: In function ‘get’:
+arraylist.c:71:1: error: control reaches end of non-void function [-Werror=return-type]
+   71 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+b746026
