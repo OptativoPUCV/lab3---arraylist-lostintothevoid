@@ -50,8 +50,8 @@ void push(ArrayList * l, void * data, int i){
 
 void* pop(ArrayList * l, int i){
   if(i>=l->size) return NULL;
-  ArrayList *Auxarray=createList();
-  Auxarray->data[0]=get(l, i);
+  void* temp = get(l, i);
+  
   if(i>=0){
     /*se recorre el vector desde normalmente para eliminar la i-esima posicion*/
     for(int z=i+1; z<=l->size; z++){
@@ -60,7 +60,7 @@ void* pop(ArrayList * l, int i){
       if(z==l->size-1){
         l->data[l->size]=NULL;
         l->size--;
-        return Auxarray->data[0];
+        return temp;
       } 
     }
   }
@@ -76,7 +76,7 @@ void* pop(ArrayList * l, int i){
           if(z==l->size-1){
             l->data[l->size]=NULL;
             l->size--;
-            return Auxarray->data[0];
+            return temp;
           }
         }
       }   
