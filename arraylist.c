@@ -49,7 +49,7 @@ void push(ArrayList * l, void * data, int i){
 }
 
 void* pop(ArrayList * l, int i){
-  if(!l->data) return NULL;
+  if(i>l->size) return NULL;
   ArrayList *Auxarray=createList();
   Auxarray->data[0]=get(l, i);
   if(i>=0){
