@@ -54,7 +54,7 @@ void* pop(ArrayList * l, int i){
   Auxarray->data[0]=get(l, i);
   if(i>=0){
     /*se recorre el vector desde normalmente para eliminar la i-esima posicion*/
-    for(int z=i; z<=l->size; z++){
+    for(int z=i+1; z<=l->size; z++){
       l->data[z-1]=l->data[z];
       /*se verifica quue el vector alla llegado a s fin para disminir la talla y eliminar el ultimo dato*/
       if(z==l->size-1){
