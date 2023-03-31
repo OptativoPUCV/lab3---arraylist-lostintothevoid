@@ -576,3 +576,9 @@ arraylist.c:109:14: error: unused variable ‘l’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 8de6aec
+Fri 31 Mar 2023 10:06:41 PM UTC: 
+ arraylist.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  11|1
+total_score: 50/70
+64bb03b
