@@ -397,3 +397,9 @@ arraylist.c:59:14: error: variable or field ‘j’ declared void
       |              ^
 Compilation failed
 40a70dd
+Fri 31 Mar 2023 02:38:43 PM UTC: 
+ arraylist.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  5|3
+total_score: 30/70
+e714941
