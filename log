@@ -387,3 +387,13 @@ Fri 31 Mar 2023 12:36:16 PM UTC:
  tests:  5|3
 total_score: 30/70
 4099747
+Fri 31 Mar 2023 02:38:18 PM UTC: 
+ arraylist.c | 7 +++++++
+ 1 file changed, 7 insertions(+)
+In file included from test.c:5:
+arraylist.c: In function ‘get’:
+arraylist.c:59:14: error: variable or field ‘j’ declared void
+   59 |     for(void j=l->size; j>=l->size+i; j--){
+      |              ^
+Compilation failed
+40a70dd
