@@ -54,8 +54,10 @@ void* pop(ArrayList * l, int i){
   ArrayList *Auxarray=createList();
   Auxarray->data[0]=get(l, i);
   if(i>=0){
+    /*se recorre el vector desde normalmente para eliminar la i-esima posicion*/
     for(int z=i; z<=l->size; z++){
       l->data[z-1]=l->data[z];
+      /*se verifica quue el vector alla llegado a s fin para disminir la talla y eliminar el ultimo dato*/
       if(z==l->size-1){
         l->data[l->size]=NULL;
         l->size--;
@@ -64,10 +66,14 @@ void* pop(ArrayList * l, int i){
     }
   }
   if(i<0){
+    //si e numero es negativo se crea n for de izq a der
     for(int j=l->size; j>=l->size+i; j--){
+      //luego se compara si se los datos gardados coinciden
       if(l->data[j]==l->data[l->size+i]){
+        //de hacerlo se reitera para eliminar la variable
         for(int z=j; z<=l->size; z++){
           l->data[z]=l->data[z+1];
+          //una vez eliminada se procede a disminuir la talla
           if(z==l->size-1){
             l->data[l->size]=NULL;
             l->size--;
