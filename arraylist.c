@@ -91,8 +91,7 @@ void* get(ArrayList * l, int i){
         return l->data[j];
     }
   }
-  int j=i;
-  return l->data[j];
+  return l->data[i];
 }
 
 int get_size(ArrayList * l){
