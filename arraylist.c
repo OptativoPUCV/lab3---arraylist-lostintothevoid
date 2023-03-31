@@ -50,8 +50,19 @@ void push(ArrayList * l, void * data, int i){
 }
 
 void* pop(ArrayList * l, int i){
+  if(!l->data) return NULL;
   ArrayList *Auxarray=createList();
   Auxarray->data[0]=get(l, i);
+  if(i>=0){
+    for(int z=i; z<=l->size; z++){
+      l->data[z-1]=l->data[z];
+      if(z==l->size-1){
+        l->data[l->size]=NULL;
+        l->size--;
+        return Auxarray->data[0];
+      } 
+    }
+  }
   if(i<0){
     for(int j=l->size; j>=l->size+i; j--){
       if(l->data[j]==l->data[l->size+i]){
