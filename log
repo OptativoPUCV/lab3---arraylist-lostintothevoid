@@ -310,3 +310,21 @@ Fri 31 Mar 2023 12:11:03 PM UTC:
  tests:  3|4
 total_score: 20/70
 f8e4b0b
+Fri 31 Mar 2023 12:30:35 PM UTC: 
+ arraylist.c | 13 +++++++++++++
+ 1 file changed, 13 insertions(+)
+In file included from test.c:5:
+arraylist.c: In function ‘push’:
+arraylist.c:36:24: error: ‘return’ with a value, in function returning void [-Werror=return-type]
+   36 |   if(i>l->size) return NULL;
+      |                        ^~~~
+arraylist.c:35:6: note: declared here
+   35 | void push(ArrayList * l, void * data, int i){
+      |      ^~~~
+arraylist.c:43:10: error: variable or field ‘aux’ declared void
+   43 |     void aux;
+      |          ^~~
+arraylist.c:43:10: error: unused variable ‘aux’ [-Werror=unused-variable]
+cc1: all warnings being treated as errors
+Compilation failed
+809a7cd
