@@ -106,7 +106,7 @@ int get_size(ArrayList * l){
 
 //remove elements
 void clean(ArrayList * l){
-  if(!l) return NuLL;
+  if(!l) return NULL;
   ArrayList *aux = createList();
   l->capacity=aux->capacity;
   l->data=aux->data;
