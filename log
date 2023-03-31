@@ -588,3 +588,14 @@ Fri 31 Mar 2023 10:09:26 PM UTC:
  tests:  11|1
 total_score: 50/70
 9bcbe68
+Fri 31 Mar 2023 10:10:21 PM UTC: 
+ arraylist.c | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+arraylist.c: In function ‘clean’:
+arraylist.c:110:19: error: ‘vector’ undeclared (first use in this function)
+  110 |   l->data= malloc(vector->capacity*sizeof(void));
+      |                   ^~~~~~
+arraylist.c:110:19: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+b6ac2f9

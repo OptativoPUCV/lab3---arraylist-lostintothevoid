@@ -106,6 +106,7 @@ int get_size(ArrayList * l){
 
 //remove elements
 void clean(ArrayList * l){
-  ArrayList* n= createList();
-  l=n;
+  l->capacity=2;
+  l->data= malloc(vector->capacity*sizeof(void));
+  l->size=0;
 }
