@@ -91,7 +91,7 @@ void* get(ArrayList * l, int i){
         return l->data[j];
     }
   }
-  int j=i-1;
+  int j=i;
   return l->data[j];
 }
 
