@@ -661,3 +661,17 @@ Fri 31 Mar 2023 10:57:01 PM UTC:
  tests:  14|1
 total_score: 60/70
 5c62e76
+Fri 31 Mar 2023 11:02:42 PM UTC: 
+ arraylist.c | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+arraylist.c: In function ‘pop’:
+arraylist.c:56:3: error: expected ‘;’ before ‘void’
+   56 |   void* temp = get(l, i);
+      |   ^~~~
+arraylist.c:65:16: error: ‘temp’ undeclared (first use in this function)
+   65 |         return temp;
+      |                ^~~~
+arraylist.c:65:16: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+0f31106

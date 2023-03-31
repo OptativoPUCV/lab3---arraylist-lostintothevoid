@@ -22,6 +22,7 @@ ArrayList *createList(void) {
 void append(ArrayList * l, void * data){
   if(l->size == l->capacity){
     l->data=realloc(l->data, sizeof(void*)*l->capacity*2);
+    if(l->data==NULL) exit(EXIT_FAILURE);
     l->capacity = l->capacity*2;
     l->data[l->size]=data; 
   }
@@ -35,6 +36,7 @@ void push(ArrayList * l, void * data, int i){
   if(i>l->size) return;
   if(l->size == l->capacity){
     l->data=realloc(l->data, sizeof(void*)*l->capacity*2);
+    if(l->data==NULL) exit(EXIT_FAILURE);
     l->capacity = l->capacity*2;
       
   }
@@ -50,8 +52,8 @@ void push(ArrayList * l, void * data, int i){
 
 void* pop(ArrayList * l, int i){
   if(i>=l->size) return NULL;
+  if(abs(i)>=l->size) return NULL
   void* temp = get(l, i);
-  
   if(i>=0){
     /*se recorre el vector desde normalmente para eliminar la i-esima posicion*/
     for(int z=i+1; z<=l->size; z++){
