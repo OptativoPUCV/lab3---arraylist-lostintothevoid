@@ -675,3 +675,9 @@ arraylist.c:65:16: error: ‘temp’ undeclared (first use in this function)
 arraylist.c:65:16: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 0f31106
+Fri 31 Mar 2023 11:02:55 PM UTC: 
+ arraylist.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  14|1
+total_score: 60/70
+4e19280

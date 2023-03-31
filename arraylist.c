@@ -52,7 +52,7 @@ void push(ArrayList * l, void * data, int i){
 
 void* pop(ArrayList * l, int i){
   if(i>=l->size) return NULL;
-  if(abs(i)>=l->size) return NULL
+  if(abs(i)>=l->size) return NULL;
   void* temp = get(l, i);
   if(i>=0){
     /*se recorre el vector desde normalmente para eliminar la i-esima posicion*/
