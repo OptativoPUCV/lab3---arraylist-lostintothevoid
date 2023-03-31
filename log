@@ -475,3 +475,14 @@ Fri 31 Mar 2023 03:10:49 PM UTC:
  tests:  8|2
 total_score: 40/70
 d9ac8ee
+Fri 31 Mar 2023 09:14:06 PM UTC: 
+ arraylist.c | 17 ++++++++++++++---
+ 1 file changed, 14 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+arraylist.c: In function ‘pop’:
+arraylist.c:58:37: error: expected ‘)’ before ‘;’ token
+   58 |         for(int z=j; z<=l->size; z++;){
+      |            ~                        ^
+      |                                     )
+Compilation failed
+0cfa508
